@@ -6,7 +6,7 @@
 Уроки, задания и обязательное ДЗ — из одного JSON-файла. Работает офлайн.
 
 <!-- Замените ссылки ниже на реальные после первого релиза -->
-[Скачать для Windows](../../releases) · [Формат курса](#-формат-курса) · [English](#-english)
+[Скачать для Windows](../../releases) · [Формат курса](#-формат-курса) · [English](#-english) · [中文](#-中文)
 
 ![Интерфейс библиотеки](docs/screenshot-library.png)
 
@@ -131,5 +131,39 @@ with validation · fully local and private.
 **Quick start:** download `index.html` and open it in a browser, or grab the
 portable Windows build from [Releases](../../releases). To connect AI, open
 "Generate (AI)", pick a provider, paste your API key, and describe the course.
+
+---
+
+<a name="-中文"></a>
+
+## ✦ 中文
+
+**Praktikum（实践场）** 是一款本地离线学习平台，风格类似 Stepik。
+课程可以用 AI 生成（使用你自己的 API 密钥）、手动编写为简单的 JSON 文件，
+或直接导入现成课程。学习进度自动记录，并以点亮的星座呈现。
+
+**功能特性：**
+- Stepik 风格的课程播放器：模块 → 课 → 分步练习
+- 三种步骤类型：理论（Markdown，支持代码块）· 测验（单选/多选）· 文本作答（精确 / 数字 / 包含匹配）
+- 每课末尾的**必做作业** —— 未完成则本课不会自动判定通过
+- 课程自动判定完成，也可手动取消标记
+- **AI 生成课程**：兼容任意 OpenAI 格式的 API —— DeepSeek、OpenAI、Gemini、OpenRouter、本地 Ollama。课程分步生成并逐课校验格式
+- 界面与课程语言：русский、English、简体中文
+- JSON 课程导入 / 导出，带严格的结构校验
+- **完全本地、注重隐私**：数据与 API 密钥仅保存在你的设备上
+
+**快速开始：** 下载 `index.html` 并在浏览器中打开即可使用；
+或从 [Releases](../../releases) 获取 Windows 便携版 —— 解压后运行
+`Praktikum.exe`，无需安装。
+
+**接入 AI：** 打开「✦ 生成（AI）」→ 选择服务商（默认 DeepSeek）→
+粘贴 API 密钥 → 填写课程主题、受众水平与课程语言 → 点击「生成」。
+密钥仅保存在本地，并直接发送给服务商。
+
+**课程格式** 见 [上方说明](#-формат-курса)，应用内的「JSON 格式」按钮
+也提供同样的示例。欢迎为 `courses/` 目录贡献中文课程，
+也欢迎改进中文翻译 —— 详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+基于 [MIT](LICENSE) 许可证发布。
 
 Licensed under [MIT](LICENSE).
