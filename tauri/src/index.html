@@ -362,6 +362,7 @@ const I18N_FN = {
        tDelArm:t=>"再点一次将删除课程「"+t+"」及其进度", tLessonDone:t=>"课程「"+t+"」已完成 ✓",
        tBadValid:e=>"课程未通过校验："+e, stLesson:(i,n,t)=>"第 "+i+"/"+n+" 课："+t }
 };
+const APP_VERSION = "1.1.0";
 let LANG = "ru";
 function t(k){ const d=I18N[LANG]||I18N.ru; return (k in d)?d[k]:(k in I18N.ru?I18N.ru[k]:k); }
 function tf(k){ const d=I18N_FN[LANG]||I18N_FN.ru; return d[k]||I18N_FN.ru[k]; }
@@ -594,7 +595,7 @@ function renderLib(){
   }).join("");
   return `<div class="lib">
     <header class="hero">
-      <p class="eyebrow">${t("eyebrow")}</p>
+      <p class="eyebrow">${t("eyebrow")} · v${APP_VERSION}</p>
       <h1>${t("brand")}</h1>
       <p class="sub">${t("heroSub")}</p>
       <div class="hero-rule">✦</div>
