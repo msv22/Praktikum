@@ -26,6 +26,13 @@ API-ключу), **написать вручную** в простом JSON ил
 ![Урок с созвездием шагов](docs/screenshot-lesson.png)
 ![Генерация курса нейросетью](docs/screenshot-generate.png)
 
+<details>
+<summary>Демо в движении (GIF)</summary>
+
+![Демо](docs/demo.gif)
+
+</details>
+
 
 ## ✦ Возможности
 
